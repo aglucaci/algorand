@@ -18,6 +18,7 @@ os.makedirs(OUTDIR, exist_ok=True)
 # Date-stamped filename
 today = datetime.utcnow().strftime("%Y-%m-%d")
 outfile = os.path.join(OUTDIR, f"ALGO_25pct_{today}.png")
+outfile_TODAY = os.path.join(OUTDIR, f"ALGORAND_TODAY.png")
 
 # --------------------
 # Fetch data
@@ -101,6 +102,7 @@ fig.text(
 
 plt.tight_layout(rect=[0, 0, 0.88, 1])
 plt.savefig(outfile, dpi=200, bbox_inches="tight")
+plt.savefig(outfile_TODAY, dpi=300, bbox_inches="tight")
 plt.close(fig)
 
 print(f"Saved {outfile}")
