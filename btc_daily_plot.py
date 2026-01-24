@@ -10,7 +10,7 @@ import pandas as pd
 TICKER = "BTC-USD"
 PERIOD = "1y"
 INTERVAL = "1d"
-OUTDIR = "outputs_btc"
+OUTDIR = "outputs"
 
 os.makedirs(OUTDIR, exist_ok=True)
 
