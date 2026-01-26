@@ -2,7 +2,7 @@ name: Daily ETH Chart
 
 on:
   schedule:
-    - cron: "0 13 * * *"   # 13:00 UTC daily (~9am ET depending on DST)
+    - cron: "0 15 * * *"   # 13:00 UTC daily (~9am ET depending on DST)
   workflow_dispatch:
 
 jobs:
